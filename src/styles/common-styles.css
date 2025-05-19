@@ -1,5 +1,11 @@
 :root {
   --font-pages: Arial, Helvetica, sans-serif;
+  --light-green: #5A7969;
+  --dark-green: #173A2B;
+  --light-skin: #FBE8D8;
+  --dark-skin: #E5C7B1;
+  --brownish: #BB885E;
+  --orangeish: #CB6B4D;
 }
 
 body {
@@ -9,4 +15,5 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: var(--light-skin);
 }
