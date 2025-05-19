@@ -1,3 +1,5 @@
+import "./../styles/home_page.css";
+
 /**
  * Get the content element from HTML
  * 

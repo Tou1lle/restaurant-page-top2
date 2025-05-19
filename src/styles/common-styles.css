@@ -4,8 +4,10 @@
   --dark-green: #173A2B;
   --light-skin: #FBE8D8;
   --dark-skin: #E5C7B1;
+  --dark-skin-low-opacity: #E5C7B195;
   --brownish: #BB885E;
   --orangeish: #CB6B4D;
+  --white: #FFF;
 }
 
 body {
@@ -16,4 +18,31 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--light-skin);
+}
+
+header {
+  background-color: var(--dark-skin-low-opacity);
+  padding: 20px 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  flex-basis: calc(100% / 3);
+  background-color: var(--orangeish);
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--light-green);
 }
