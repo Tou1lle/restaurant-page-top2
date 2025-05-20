@@ -4,9 +4,10 @@
   --dark-green: #173A2B;
   --light-skin: #FBE8D8;
   --dark-skin: #E5C7B1;
-  --dark-skin-low-opacity: #E5C7B195;
+  --dark-skin-low-opacity: #E5C7B1DD;
   --brownish: #BB885E;
   --orangeish: #CB6B4D;
+  --orangeish-low-opacity: #CB6B4DEE;
   --white: #FFF;
 }
 
@@ -42,7 +43,7 @@ p:nth-child(3) {
 }
 
 p {
-  background-color: var(--light-green);
+  background-color: var(--orangeish-low-opacity);
   height: 200px;
   display: flex;
   text-align: center;
