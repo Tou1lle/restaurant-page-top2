@@ -18,6 +18,13 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--light-skin);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
 }
 
 header {
@@ -45,4 +52,13 @@ button {
 button:hover {
   cursor: pointer;
   background-color: var(--light-green);
+}
+
+footer {
+  background-color: var(--dark-skin-low-opacity);
+  padding: 20px;
+  color: var(--white);
+  text-align: center;
+  font-weight: 900;
+  margin-top: 2rem;
 }
