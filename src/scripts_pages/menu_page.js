@@ -38,4 +38,6 @@ function createListItem(name, prize = "### $") {
   itemPrize.classList.add("item-prize");
 
   listItem.append(itemName, itemPrize);
+
+  return listItem;
 }
