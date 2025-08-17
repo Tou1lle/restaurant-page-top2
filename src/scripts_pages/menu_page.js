@@ -26,3 +26,16 @@ const alcoholHeader = document.createElementl("h2");
 const caffeeList = document.createElement("ul");
 const foodList = document.createElement("ul");
 const alcoholList = document.createElement("ul");
+
+function createListItem(name, prize = "### $") {
+  const listItem = document.createElement("li");
+  const itemName = document.createElement("h3");
+  const itemPrize = document.createElementl("div");
+
+  itemName.textContent = name;
+  itemPrize.textContent = prize;
+
+  itemPrize.classList.add("item-prize");
+
+  listItem.append(itemName, itemPrize);
+}
