@@ -20,17 +20,18 @@ const alcoholListContainer = document.createElement("div");
 // Headers for lists
 const caffeeHeader = document.createElement("h2");
 const foodHeader = document.createElement("h2");
-const alcoholHeader = document.createElementl("h2");
+const alcoholHeader = document.createElement("h2");
 
 // Unordered list elements
 const caffeeList = document.createElement("ul");
 const foodList = document.createElement("ul");
 const alcoholList = document.createElement("ul");
+const lists = [caffeeList, foodList, alcoholList];
 
-function createListItem(name, prize = "### $") {
+function createListItem(name = "Some good Item", prize = "### $") {
   const listItem = document.createElement("li");
   const itemName = document.createElement("h3");
-  const itemPrize = document.createElementl("div");
+  const itemPrize = document.createElement("div");
 
   itemName.textContent = name;
   itemPrize.textContent = prize;
@@ -41,3 +42,5 @@ function createListItem(name, prize = "### $") {
 
   return listItem;
 }
+
+export {createListItem};
