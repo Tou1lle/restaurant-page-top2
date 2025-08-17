@@ -22,11 +22,19 @@ const caffeeHeader = document.createElement("h2");
 const foodHeader = document.createElement("h2");
 const alcoholHeader = document.createElement("h2");
 
+caffeeHeader.textContent = "Coffee List";
+foodHeader.textContent = "Food List";
+alcoholHeader.textContent = "Alcohol List";
+
 // Unordered list elements
 const caffeeList = document.createElement("ul");
 const foodList = document.createElement("ul");
 const alcoholList = document.createElement("ul");
 const lists = [caffeeList, foodList, alcoholList];
+
+caffeeListContainer.append(caffeeHeader, caffeeList);
+foodListContainer.append(foodHeader, foodList);
+alcoholListContainer.append(alcoholHeader, alcoholList);
 
 function createListItem(name = "Some good Item", prize = "### $") {
   const listItem = document.createElement("li");
@@ -43,4 +51,31 @@ function createListItem(name = "Some good Item", prize = "### $") {
   return listItem;
 }
 
-export {createListItem};
+function clearPage() {
+  contentDOM.textContent = "";
+  caffeeList.textContent = "";
+  foodList.textContent = "";
+  alcoholList.textContent = "";
+}
+
+function createPage() {
+  clearPage();
+
+  const items = [];
+  for (let i = 1; i <= 12; i++) {
+    items.push(createListItem(`Item number ${i}`));
+  }
+
+  for (let i = 0; i < items.length; i++) {
+    if (i < 4) {
+      caffeeList.appendChild(items[i]);
+    } else if (i < 8) {
+      foodList.appendChild(items[i]);
+    } else if (i < 12) {
+      alcoholList.appendChild(items[i]);
+    }
+  }
+  contentDOM.append(caffeeListContainer, foodListContainer, alcoholListContainer);
+}
+
+export {createPage};

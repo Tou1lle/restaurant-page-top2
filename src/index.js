@@ -5,5 +5,4 @@ import * as menuPage from "./scripts_pages/menu_page";
 
 console.log("Webpack is working!");
 //homePage.createHomePage();
-console.log(menuPage.createListItem())
-console.log(menuPage.createListItem("Espresso"));
+menuPage.createPage();
