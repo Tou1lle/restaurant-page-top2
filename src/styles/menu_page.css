@@ -2,7 +2,7 @@
   padding: 1rem;
 }
 
-#content > div {
+#content > .menu-list {
   background-color: whitesmoke;
   margin-top: 1rem;
   border-radius: 1rem;

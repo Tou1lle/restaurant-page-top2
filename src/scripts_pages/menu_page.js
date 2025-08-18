@@ -17,6 +17,10 @@ const caffeeListContainer = document.createElement("div");
 const foodListContainer = document.createElement("div");
 const alcoholListContainer = document.createElement("div");
 
+caffeeListContainer.classList.add("menu-list");
+foodListContainer.classList.add("menu-list");
+alcoholListContainer.classList.add("menu-list");
+
 // Headers for lists
 const caffeeHeader = document.createElement("h2");
 const foodHeader = document.createElement("h2");
